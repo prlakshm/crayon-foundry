@@ -49,6 +49,7 @@
     </div>
 
 	<div class="fonts-list">
+    <div class="font-wrapper">
 	<div class="font-item">
 		 <div class="font-controls">
       <input type="range" min="0" max="100" value="0" class="weight-slider" />
@@ -61,7 +62,15 @@
       RATS jfsdz
     </div>
 	</div>
+  </div>
+  <div class="font-description"><p><span style="font-style: italic;">Rats!</span> A typeface inspired by rats.</p>
+  <ul class="font-details">
+    <li>Font Weight: 0-100</li>
+    <li>Characters: A–Z, a–z, 0–9, .,:;-!?/()'"</li>
+  </ul>
+  </div>
 	</div>
+  <div class="font-wrapper">
 	  <div class="font-item">
 		 <div class="font-controls">
       <input type="range" min="0" max="100" value="0" class="weight-slider" />
@@ -74,7 +83,16 @@
       BLOOM
     </div>
 	</div>
+
+    </div>
+    <div class="font-description"><p>Inspired by flowers in full-bloom. Drag the slider to watch the flowers bloom!</p>
+    <ul class="font-details">
+    <li>Font Weight: 0-100</li>
+    <li>Characters: a–z, 0–9, .,:;-!?/()'"</li>
+  </ul>
+    </div>
 	</div>
+  <div class="font-wrapper">
 	 <div class="font-item">
 		 <div class="font-controls">
       <input type="range" min="0" max="100" value="100" class="weight-slider" />
@@ -87,7 +105,15 @@
 	Twinkle Twinkle
     </div>
 	</div>
+    </div>
+    <div class="font-description"><p>Based off the nursery rhyme <span style="font-style: italic;">Twinkle Twinkle Little Star</span>, where counters turn into stars.</p>
+    <ul class="font-details">
+    <li>Font Weight: 0-100</li>
+    <li>Characters: A–Z, a–z, 0–9, .,:;!?•*#/\- – —_(){}[]“”‘’"'</li>
+  </ul>
+    </div>
 	 </div>
+   
 	</div>
 
 	<div class="footer">
@@ -106,13 +132,13 @@
     const slider = item.querySelector('.weight-slider');
     const preview = item.querySelector('.font-preview');
 
-    // Determine axis tag based on the font class
+    // Determine axis tag based on font class
     let axis = "wght"; // default
     if (preview.classList.contains('rats')) axis = "wght";
     else if (preview.classList.contains('bloom')) axis = "BLOM";
     else if (preview.classList.contains('twinkle')) axis = "STAR";
 
-    // Listen for slider input and update variation
+    // Listen to slider input and update axis value
     slider.addEventListener('input', (event) => {
       const value = event.target.value;
       preview.style.fontVariationSettings = `"${axis}" ${value}`;
@@ -125,7 +151,7 @@ document.querySelectorAll('.font-preview').forEach(preview => {
   let typingStarted = false;
 
   preview.addEventListener('focus', () => {
-    // Dim the original text to 50% on focus
+    // Dim the original text to 50% transparency placeholder
     if (!typingStarted) {
       preview.classList.add('placeholder');
     }
@@ -151,7 +177,7 @@ document.querySelectorAll('.font-preview').forEach(preview => {
   });
 
   preview.addEventListener('input', () => {
-    // Keep the scroll following as before
+    // Keep the scroll following the text x-overflow
     const containerWidth = wrapper.offsetWidth;
     const scrollAmount = Math.max(0, preview.scrollWidth - containerWidth);
     preview.style.transform = `translateX(-${scrollAmount}px)`;

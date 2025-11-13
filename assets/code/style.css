@@ -107,6 +107,39 @@ a:hover {
   padding: 1rem;
 }
 
+.font-wrapper {
+  transition: all 1s ease;
+}
+
+.font-description {
+  max-height: 0;
+  overflow: hidden;
+  display: none;
+  opacity: 0;
+  padding: 1rem 1rem;
+  transition: all 1s ease;
+  border: 1px solid rgba(43, 43, 43, 0.1);
+  background-color: #fefcf7;
+}
+
+.font-wrapper:hover .font-description {
+  max-height: max-content;
+  transition: all 0.5s ease;
+  display: block;
+  opacity: 1;
+}
+
+.font-details {
+  margin-bottom: 1rem;
+  padding-left: 1.2rem;
+  list-style-type: disc;
+}
+
+
+.font-details li {
+  margin-bottom: 0.25rem;
+}
+
 .font-preview-wrapper {
   width: 100%;              
   overflow-x: hidden;             
