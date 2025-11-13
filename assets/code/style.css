@@ -259,11 +259,11 @@ a:hover {
 }
 
 .doodle-top-right {
-  top: 90px;
-  right: -90px;
-  width: 190px;
-  rotate: 5deg;
-  opacity: 0.17;
+  top: 75px;
+  right: -100px;
+  width: 200px;
+  rotate: 3deg;
+  opacity: 0.15;
 }
 
 .doodle-small-left {
@@ -292,7 +292,7 @@ a:hover {
 }
 
 .doodle-small-right {
-  bottom: 16%;
+  bottom: 17%;
   right: 15px;
   width: 60px;
   rotate: -2deg;
@@ -308,12 +308,12 @@ a:hover {
 }
 
 .doodle-right {
-  top: 45%;
-  right: -70px;
+  top: 43%;
+  right: -75px;
   transform: translateY(-50%);
   transform: scaleX(-1); 
   width: 230px;
-  rotate: -45deg;
+  rotate: -42deg;
 }
 
 
