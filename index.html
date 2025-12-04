@@ -70,7 +70,7 @@
               <div class="color-dot black active" data-color="bloom-black"></div>
               <div class="color-dot green" data-color="bloom"></div>
             </div>
-            <input type="range" min="0" max="100" value="0" class="weight-slider" />
+            <input type="range" min="0" max="100" value="100" class="weight-slider" />
             <a href="assets/fonts/BloomVF.ttf" download title="Download font">
               <img src="assets/images/download.png" alt="Download icon" class="download-icon">
             </a>
@@ -184,7 +184,7 @@
         preview.style.transform = `translateX(-${scrollAmount}px)`;
       });
     });
-    
+
 
     document.querySelectorAll(".font-item").forEach(item => {
     const preview = item.querySelector(".font-preview");
