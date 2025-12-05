@@ -28,13 +28,13 @@
         <img src="assets/images/fairy-magic-logo.png" alt="Crayon Foundry Logo" />
       </div>
       <div class="nav">
-        <a href="">
+        <a href="assets/fonts/RatsVF.ttf">
           Rats
         </a>
-        <a href="">
+        <a href="assets/fonts/Bloom-BlackVF.ttf">
           Bloom
         </a>
-        <a href="">
+        <a href="assets/fonts/TwinkleTwinkleVF.ttf">
           Twinkle Twinkle
         </a>
       </div>
@@ -205,6 +205,13 @@
 
         // Apply correct class
         preview.classList.add(newClass);
+
+        if (selectedClass === "bloom") {
+        downloadLink.href = "assets/fonts/BloomVF.ttf";
+      } else if (selectedClass === "bloom-black") {
+        downloadLink.href = "assets/fonts/Bloom-BlackVF.ttf";
+      }
+      
       });
     });
   });
