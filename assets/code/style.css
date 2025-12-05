@@ -70,7 +70,7 @@ a:hover {
 .logo img {
   width: 35rem;
   opacity: 0.95;
-  transform: translateX(5%) scaleX(1.25);
+  transform: translateX(5%) scaleX(1.05);
 
 }
 
