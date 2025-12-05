@@ -233,7 +233,7 @@ a:hover {
 }
 
 .color-dot.green {
-  background-color: #3CB371; 
+  background-color: #4A8D00; 
 }
 
 .color-dot.active {
@@ -388,7 +388,7 @@ a:hover {
 
 @font-face {
   font-family: "Bloom-Black";
-  src: url("../fonts/BloomBlackVF.ttf") format("truetype");
+  src: url("../fonts/Bloom-BlackVF.ttf") format("truetype");
   font-weight: 0 100;
   font-style: normal;
 }
