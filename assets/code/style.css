@@ -408,3 +408,21 @@ a:hover {
   font-style: normal;
 }
 
+
+@media (max-width: 900px) {
+
+  .logo img {
+  width: 75vw
+
+}
+
+.font-preview {
+  font-size: 4rem;
+}
+
+.fonts-list {
+  padding-bottom: 0rem;
+}
+
+
+}
