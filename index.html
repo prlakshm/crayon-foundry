@@ -7,6 +7,7 @@
   <title>Crayon Foundry</title>
 
   <link rel="stylesheet" href="assets/code/style.css">
+  <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
 </head>
 
 <body>
@@ -56,7 +57,7 @@
           </div>
         </div>
         <div class="font-description">
-          <p><span style="font-style: italic;">Rats!</span> A typeface inspired by rats.</p>
+          <p><a href="https://rats.pranaviln.com/" class="special-a">Rats!</a>  A typeface inspired by rats.</p>
           <ul class="font-details">
             <li>Font Weight: 0-100</li>
             <li>Characters: A–Z, a–z, 0–9, .,:;-!?/()'"</li>
@@ -202,7 +203,7 @@
 
         // Remove previous bloom classes
         preview.classList.remove("bloom", "bloom-black");
-
+s
         // Apply correct class
         preview.classList.add(newClass);
 
@@ -211,7 +212,7 @@
       } else if (selectedClass === "bloom-black") {
         downloadLink.href = "assets/fonts/Bloom-BlackVF.ttf";
       }
-      
+
       });
     });
   });
